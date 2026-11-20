@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Molten Mosfet Co</title>
-  <meta name="description" content="Automated, repeatable dyno testing and characterization of electric unicycles (EUCs), built on ISO 17025 principles.">
+  <meta name="description" content="Repeatable, automated dyno testing for electric unicycles, built on ISO 17025 principles.">
   <meta property="og:title" content="Molten Mosfet Co">
-  <meta property="og:description" content="Automated, repeatable dyno testing and characterization of electric unicycles (EUCs), built on ISO 17025 principles.">
+  <meta property="og:description" content="Repeatable, automated dyno testing for electric unicycles, built on ISO 17025 principles.">
   <meta property="og:url" content="https://moltenmosfet.com">
   <meta property="og:image" content="https://moltenmosfet.com/banner.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -48,17 +48,34 @@
       padding: clamp(2.5rem, 10vh, 6rem) 1rem 3rem;
     }
     main { width: 100%; max-width: 34rem; }
-    header { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.75rem; }
+    header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
     .logo {
       display: block;
       flex: none;
-      width: 6rem;
+      width: 5.75rem;
       height: auto;
+      margin-top: 0.2rem;
       border: 1px solid var(--line);
       border-radius: 6px;
     }
-    h1 { margin: 0 0 .5rem; font-size: 2rem; font-weight: 600; line-height: 1.25; }
-    header p { margin: 0; color: var(--muted); }
+    h1 {
+      margin: 0 0 0.4rem;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
     ul {
       list-style: none;
       margin: 0;
@@ -72,7 +89,7 @@
     a {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: center;
       gap: 1rem;
       padding: .75rem 1rem;
       color: var(--text);
@@ -80,10 +97,12 @@
       font-weight: 600;
     }
     a span { color: var(--muted); font-weight: 400; font-size: .9rem; }
-    a:hover { background: var(--hover); }
-    a:hover { color: var(--accent); }
-    @media (max-width: 30rem) { header { flex-direction: column; align-items: flex-start; } }
+    a:hover { background: var(--hover); color: var(--accent); }
     a:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+    @media (max-width: 30rem) {
+      header { flex-direction: column; }
+      .logo { margin-top: 0; }
+    }
   </style>
 </head>
 <body>
@@ -92,7 +111,7 @@
       <img class="logo" src="Logo.png" alt="Molten Mosfet Co logo">
       <div>
         <h1>Molten Mosfet Co</h1>
-        <p>Automated, repeatable dyno testing and characterization of electric unicycles (EUCs), built on ISO 17025 principles.</p>
+        <p>Repeatable, automated dyno testing for electric unicycles, built on ISO&nbsp;17025 principles.</p>
       </div>
     </header>
     <ul>
