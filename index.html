@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>moltenmosfet</title>
+  <meta name="description" content="Automated, repeatable dyno testing and characterization of electric unicycles (EUCs), built on ISO 17025 principles.">
+  <meta property="og:title" content="moltenmosfet">
+  <meta property="og:description" content="Automated, repeatable dyno testing and characterization of electric unicycles (EUCs), built on ISO 17025 principles.">
+  <meta property="og:url" content="https://moltenmosfet.com">
+  <meta property="og:image" content="https://moltenmosfet.com/banner.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" type="image/png" href="Logo_small.png">
+  <link rel="apple-touch-icon" href="Logo.png">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #161b22;
+      --hover: #1c2128;
+      --line: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #2f81f7;
+      color-scheme: dark light;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #ffffff;
+        --panel: #ffffff;
+        --hover: #f6f8fa;
+        --line: #d0d7de;
+        --text: #1f2328;
+        --muted: #656d76;
+        --accent: #0969da;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      display: flex;
+      justify-content: center;
+      padding: clamp(2.5rem, 10vh, 6rem) 1rem 3rem;
+    }
+    main { width: 100%; max-width: 34rem; }
+    header { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.75rem; }
+    .logo {
+      display: block;
+      flex: none;
+      width: 6rem;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+    h1 { margin: 0 0 .5rem; font-size: 2rem; font-weight: 600; line-height: 1.25; }
+    header p { margin: 0; color: var(--muted); }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    li + li { border-top: 1px solid var(--line); }
+    a {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      padding: .75rem 1rem;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a span { color: var(--muted); font-weight: 400; font-size: .9rem; }
+    a:hover { background: var(--hover); }
+    a:hover { color: var(--accent); }
+    @media (max-width: 30rem) { header { flex-direction: column; align-items: flex-start; } }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img class="logo" src="Logo.png" alt="moltenmosfet logo">
+      <div>
+        <h1>moltenmosfet</h1>
+        <p>Automated, repeatable dyno testing and characterization of electric unicycles (EUCs), built on ISO 17025 principles.</p>
+      </div>
+    </header>
+    <ul>
+      <li><a href="https://github.com/moltenmosfet" rel="noopener">GitHub <span>moltenmosfet</span></a></li>
+      <li><a href="https://www.youtube.com/@moltenmosfet" rel="noopener">YouTube <span>@moltenmosfet</span></a></li>
+      <li><a href="https://www.instagram.com/moltenmosfet/" rel="noopener">Instagram <span>@moltenmosfet</span></a></li>
+      <li><a href="https://www.facebook.com/moltenmosfet/" rel="noopener">Facebook <span>moltenmosfet</span></a></li>
+    </ul>
+  </main>
+</body>
+</html>
