@@ -78,7 +78,7 @@
     }
     ul {
       list-style: none;
-      margin: 0;
+      margin: 0 0 1.25rem;
       padding: 0;
       background: var(--panel);
       border: 1px solid var(--line);
@@ -99,6 +99,23 @@
     a span { color: var(--muted); font-weight: 400; font-size: .9rem; }
     a:hover { background: var(--hover); color: var(--accent); }
     a:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+    .banner {
+      margin: 0;
+      aspect-ratio: 2 / 1;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+    }
+    .banner img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 56% 48%;
+      transform: scale(1.16);
+      transform-origin: 56% 48%;
+    }
     @media (max-width: 30rem) {
       header { flex-direction: column; }
       .logo { margin-top: 0; }
@@ -120,6 +137,9 @@
       <li><a href="https://www.instagram.com/moltenmosfet/" rel="noopener">Instagram <span>@moltenmosfet</span></a></li>
       <li><a href="https://www.facebook.com/moltenmosfet/" rel="noopener">Facebook <span>moltenmosfet</span></a></li>
     </ul>
+    <figure class="banner">
+      <img src="banner.jpg" alt="Electric unicycle mounted inside the welded steel dynamometer test frame">
+    </figure>
   </main>
 </body>
 </html>
